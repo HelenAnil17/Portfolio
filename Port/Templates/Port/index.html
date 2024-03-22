@@ -1,0 +1,959 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'Port/assets/favicons/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'Port/assets/favicons/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'Port/assets/favicons/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'Port/assets/favicons/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'Port/assets/favicons/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <link rel="shortcut icon" href="{% static 'Port/assets/favicons/favicon.ico' %}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="{% static 'Port/assets/favicons/browserconfig.xml' %}">
+    <meta name="theme-color" content="#a789d4">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="{% static 'Port/assets/css/swiper-bundle.min.css' %}">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="{% static 'Port/assets/css/styles.css' %}">
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!-- <a href="#" class="nav__logo"></a> -->
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+
+                    
+                    
+                    <li class="nav__item">
+                        <a href="#awards" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#project" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#volunteering" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+
+                    
+                </ul>
+            </div>
+
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <!-- <span class="home__greeting">Hello, I'm</span> -->
+                    <h1 class="home__name">Helen Anil</h1>
+                    <h3 class="home__education">Frontend Developer | Designer | Content Writer</h3>
+
+                    <div class="home__button">
+                        <a download="" href="{% static 'Port/assets/pdf/Helen Anil.pdf' %}" class="button button--ghost">
+                            Download Resume
+                        </a>
+
+                        <a href="#about" class="button">About</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="{% static 'Port/assets/img/profile.png' %}" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/helenanil17/" target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/HelenAnil17" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle"></span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="{% static 'Port/assets/img/About.jpeg' %}" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Internships</h3>
+                            <span class="about__subtitle">2+</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">4+ Projects</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-support about__icon'></i>
+                            <h3 class="about__title">Course Certification</h3>
+                            <span class="about__subtitle">1+</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        A goal-driven, energetic undergraduate student looking for the chance to learn about and
+interact with top organisations and creating a sense of identity for one's career.
+                    </p>
+
+                    <a href="#contact" class="button about__button-contact">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle"></span>
+            <h2 class="section__title">My Expertise</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend Development</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Javascript</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Beginner</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Svelte</h3>
+                                    <span class="skills__level">Beginner</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Beginner</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Backend Development</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div> 
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Beginner</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Django</h3>
+                                    <span class="skills__level">Beginner</span>
+                                </div>
+                            </div>
+
+                        
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section" id="education">
+            <h2 class="section__title">Education Profile</h2>
+           
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">Degree<br> B.Tech CSE</h3>
+
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Degree</h3>
+
+                            <p class="services__modal-description">
+                                I am currently pursuing my undergraduate B.Tech degree in Computer Science and Engineering.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        College : Federal Institute of Science and Technology (FISAT)
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        CGPA : 8.34
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Year of Study : 2020-2024
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Higher Secondary<br> Education</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Biomaths</h3>
+
+                            <p class="services__modal-description">
+                                I have completed my higher secondary education in Biomaths
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        School : Sree Narayana Higher Secondary School (SNHSS) ,North Paravur
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Percentage : 99.97%
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Year of Study : 2018-2020
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">High School <br> Education</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">SSLC</h3>
+
+                            <p class="services__modal-description">
+                                I have completed my high school education from State board of Education
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                       School : St Annes' High School, Kottapuram
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Grade : 10A+
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Year of Study : 2017-2018
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <!-- <span class="section__subtitle">My Portfolio</span> -->
+            <h2 class="section__title"> Works</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter='all'>All</span>
+                <span class=" work__item" data-filter='.wall'>Wall Cards</span>
+                <span class=" work__item" data-filter='.creative'>Creative Corner</span>
+                <span class=" work__item" data-filter='.comics'>Comics</span>
+                <span class=" work__item" data-filter='.logo'>Logos</span>
+            </div>
+
+            <div class="work__container container grid">
+                
+                <div class="work__card mix wall">
+                    <a href="{% static 'Port/assets/img/Equinox.jpeg' %}" target="_blank" class="work__img-button">
+                        <img src="{% static 'Port/assets/img/Equinox.jpeg' %}" alt="" class="work__img">
+                        <h3 class="work__title">Equinox</h3>
+                        <span class="work__view-button">View <i class='bx bx-right-arrow services__icon'></i></span>
+                    </a>
+                </div>
+                <div class="work__card mix wall">
+                    <a href="{% static 'Port/assets/img/Aphelion.jpeg' %}" target="_blank" class="work__img-button">
+                        <img src="{% static 'Port/assets/img/Aphelion.jpeg' %}" alt="" class="work__img">
+                        <h3 class="work__title">Aphelion</h3>
+                        <span class="work__view-button">View <i class='bx bx-right-arrow services__icon'></i></span>
+                    </a>
+                </div>
+                <div class="work__card mix logo">
+                    <a href="{% static 'Port/assets/img/Ride.jpeg' %}" target="_blank" class="work__img-button">
+                        <img src="{% static 'Port/assets/img/Ride.jpeg' %}" alt="" class="work__img">
+                        <h3 class="work__title">Ride</h3>
+                        <span class="work__view-button">View <i class='bx bx-right-arrow services__icon'></i></span>
+                    </a>
+                </div>
+                <div class="work__card mix logo">
+                    <a href="{% static 'Port/assets/img/Logo.jpg' %}" target="_blank" class="work__img-button">
+                        <img src="{% static 'Port/assets/img/Logo.jpg' %}" alt="" class="work__img">
+                        <h3 class="work__title">Creaza</h3>
+                        <span class="work__view-button">View <i class='bx bx-right-arrow services__icon'></i></span>
+                    </a>
+                </div>
+                <div class="work__card mix comics">
+                    <img src="{% static 'Port/assets/img/Comics.jpeg' %}" alt="" class="work__img">
+                    <a href="{% static 'Port/assets/img/Comics.pdf' %}" target="_blank" class="work__img-button">
+                        
+                        <h3 class="work__title">Comic book</h3>
+                        <span class="work__view-button">View <i class='bx bx-right-arrow services__icon'></i></span>
+                    </a>
+                </div>
+                <div class="work__card mix creative">
+                    <img src="{% static 'Port/assets/img/News.jpeg' %}" alt="" class="work__img">
+                    <a href="{% static 'Port/assets/img/News.pdf' %}" target="_blank" class="work__img-button">
+                        
+                        <h3 class="work__title">News</h3>
+                        <span class="work__view-button">View <i class='bx bx-right-arrow services__icon'></i></span>
+                    </a>
+                </div>
+                <div class="work__card mix creative">
+                    <img src="{% static 'Port/assets/img/space.jpeg' %}" alt="" class="work__img">
+                    <a href="{% static 'Port/assets/img/Space.pdf' %}" target="_blank" class="work__img-button">
+                        
+                        <h3 class="work__title">A space detour</h3>
+                        <span class="work__view-button">View <i class='bx bx-right-arrow services__icon'></i></span>
+                    </a>
+                </div>
+                <!-- <div class="work__card mix creative">
+                    <img src="{% static 'Port/assets/img/Intergalactic.jpeg' %}" alt="" class="work__img">
+                    <a href="{% static 'https://drive.google.com/drive/u/1/folders/10-B-ZNWplTKRC7kWrIrURya3TWgjl25l' %}" target="_blank" class="work__img-button">
+                        
+                        <h3 class="work__title">Intergalactic</h3>
+                        <span class="work__view-button">View <i class='bx bx-right-arrow services__icon'></i></span>
+                    </a>
+                </div> -->
+                <div class="work__card mix all">
+
+                        <img src="{% static 'Port/assets/img/loading.jpeg' %}" alt="" class="work__img">
+                        <h3 class="work__title">Coming Soon...</h3>
+               
+            </div>
+        </section>
+        <!-- ========================PROJECTS ====================== -->
+        <!-- <section class="work section" id="work">
+            <h2 class="section__title"> Projects</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter='all'>All</span>
+                <span class=" work__item" data-filter='.phar'>Pharmacy</span>
+                <span class=" work__item" data-filter='.event'>Event</span>
+                <span class=" work__item" data-filter='.canteen'>Canteen</span>
+                <span class=" work__item" data-filter='.inv'>Inventory</span>
+            </div>
+
+            <div class="work__container container grid">
+                
+                <div class="work__card mix phar">
+                    <a href="assets/img/Equinox.jpeg" target="_blank" class="work__img-button">
+                        <img src="assets/img/phar.jpeg" alt="" class="work__img">
+                        <h3 class="work__title">Pharmacy Management System</h3>
+                        <span class="work__view-button">View full description <i class='bx bx-right-arrow services__icon'></i></span>
+                    </a>
+                </div>
+                <div class="work__card mix event">
+                    <a href="assets/img/Aphelion.jpeg" target="_blank" class="work__img-button">
+                        <img src="assets/img/event.jpeg" alt="" class="work__img">
+                        <h3 class="work__title">Event Management System</h3>
+                        <span class="work__view-button">View full description <i class='bx bx-right-arrow services__icon'></i></span>
+                    </a>
+                </div>
+                <div class="work__card mix canteen">
+                    <a href="assets/img/Ride.jpeg" target="_blank" class="work__img-button">
+                        <img src="assets/img/canteen.jpeg" alt="" class="work__img">
+                        <h3 class="work__title">Canteen Management System</h3>
+                        <span class="work__view-button">View full description <i class='bx bx-right-arrow services__icon'></i></span>
+                    </a>
+                </div>
+                <div class="work__card mix inv">
+                    <a href="assets/img/Logo.jpg" target="_blank" class="work__img-button">
+                        <img src="assets/img/inv.jpeg" alt="" class="work__img">
+                        <h3 class="work__title">Inventory Based Business Management System</h3>
+                        <span class="work__view-button">View full description<i class='bx bx-right-arrow services__icon'></i></span>
+                    </a>
+                </div>
+        </section> -->
+        <section class="work section" id="project">
+            <!-- <span class="section__subtitle">My Portfolio</span> -->
+            <h2 class="section__title">Projects</h2>
+            
+            <div class="proj__container container grid">
+                <div class="proj__item">
+                    <div class="work__card mix phar">
+                        <a href="#" target="_blank" class="work__img-button">
+                            <img src="{% static 'Port/assets/img/phar.jpeg' %}" alt="" class="proj__img">
+                            <h3 class="work__title">Pharmacy Management System</h3>
+                            <!-- <span class="work__view-button">View full description <i class='bx bx-right-arrow services__icon'></i></span> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="proj__item">
+                    <div class="work__card mix event">
+                        <a href="#" target="_blank" class="work__img-button">
+                            <img src="{% static 'Port/assets/img/event.jpeg' %}" alt="" class="proj__img">
+                            <h3 class="work__title">Event Management System</h3>
+                            <!-- <span class="work__view-button">View full description <i class='bx bx-right-arrow services__icon'></i></span> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="proj__item">
+                    <div class="work__card mix canteen">
+                        <a href="#" target="_blank" class="work__img-button">
+                            <img src="{% static 'Port/assets/img/canteen.jpeg' %}" alt="" class="proj__img">
+                            <h3 class="work__title">Canteen Management System</h3>
+                            <!-- <span class="work__view-button">View full description <i class='bx bx-right-arrow services__icon'></i></span> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="proj__item">
+                    <div class="work__card mix inv">
+                        <a href="#" target="_blank" class="work__img-button">
+                            <img src="{% static 'Port/assets/img/inv.jpeg' %}" alt="" class="proj__img">
+                            <h3 class="work__title">Inventory Based Business Management System</h3>
+                            <!-- <span class="work__view-button">View full description<i class='bx bx-right-arrow services__icon'></i></span> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- ========================VOLUNTEERING================ -->
+       
+        <section class="services section" id="volunteering">
+            <h2 class="section__title">Volunteering Experience</h2>
+           
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        <img src="{% static 'Port/assets/img/PC.jpeg' %}" alt="" class="work__img">
+                        <h6 class="services__title">Programme Coordinator</h6>
+                        <h8 class="services__title">IEEE WiE Kerala Section</h8>
+        
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+        
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Programme Coordinator</h3>
+                            <p class="services__modal-description">
+                                "I am a dynamic leader committed to advancing women in engineering, served as Programme Coordinator at IEEE WiE Kerala Section (2022-2023).
+                                I orchestrated numerous events, coordinating participants from across Kerala and facilitating extensive networking opportunities 
+                                with a fervent dedication to inclusivity and empowering individuals to excel in STEM fields."
+                            </p>
+                       </div>
+                    </div>
+                </div>
+        
+                <div class="services__card">
+                    <div class="serv">
+                        <img src="{% static 'Port/assets/img/FSU.jpeg' %}" alt="" class="work__img">
+                        <h5 class="services__title">Lady Representative</h5>
+                        <h8 class="services__title">FISAT STUDENTS UNION (FSU)</h8>
+        
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+        
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Lady Representative</h3>
+                            <p class="services__modal-description">
+                                "I'm currently serving as the Lady Representative at FISAT Students Union (2023-2024), 
+                                advocating for the rights and concerns of female students, ensuring every event is memorable 
+                                through meticulous planning and hands-on coordination. My involvement in leading the Documentation team 
+                                significantly contributed to the success of the Bharatham 2K24, a flagship event(Arts Fest) of FISAT."
+                            </p>
+                       </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <div class="serv">
+                        <img src="{% static 'Port/assets/img/SPS.jpeg' %}" alt="" class="work__img">
+                        <h5 class="services__title">SPS Chair</h5>
+                        <h8 class="services__title">IEEE FISAT SB</h8>
+        
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+        
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Signal Processing Society(SPS) Chair</h3>
+                            <p class="services__modal-description">
+                                "I'm currently serving as the Signal Processing Society(SPS) Chair at IEEE FISAT SB(2023-2024) and very 
+                                proud to have led our student branch chapter to be recognized with the Outstanding
+                                Student Branch Chapter award from the Kerala Chapter in the year 2023 with the conduct
+                                of a wide variety of events in a short time span. I secured funding to support our initiatives
+                                and enhance the educational experience for members by participating actively in proposal
+                                submissions for grants and awards."
+                            </p>
+                       </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <div class="serv">
+                        <img src="{% static 'Port/assets/img/WIC.jpeg' %}" alt="" class="work__img">
+                        <h5 class="services__title">Women in Computing</h5>
+                        <h8 class="services__title">IEEE CS SBC FISAT</h8>
+        
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+        
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Women in Computing (WIC)</h3>
+                            <p class="services__modal-description">
+                                "I organized events, documented our society's progress, and mentored student members to excel in technical 
+                                domains as the Women in Computing Coordinator at IEEE CS SBC FISAT.  My exceptional teamwork skills 
+                                then led to winning the Best WiE Volunteer award in the same year, further recognizing our collective 
+                                efforts in promoting diversity and innovation within the computing community."
+                            </p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========ORGANIZATIONS================ -->
+        <section class="org section" id="organisations">
+            <h2 class="section__title">Organisations</h2>
+           
+
+            <div class="org__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">IEEE FISAT SB (Student Member)</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <div class="org__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">Astro Club,FISAT (Student Member)</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="org__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">Maths Club,FISAT (Student Member)</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- ================ AWARDS ================= -->
+    
+        <section class="services section" id ="awards">
+            <h2 class="section__title">Awards and Achievements</h2>
+           
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        <img src="{% static 'Port/assets/img/award.jpeg' %}" alt="">
+                        <h3 class="services__title">Best WiE Volunteer<br> IEEE FISAT SB</h3>
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Best WiE Volunteer Award</h3>
+                            <p class="services__modal-description">
+                                "I am honored to have been awarded the Best WiE Volunteer of the year 2022-23 by IEEE FISAT SB. 
+                                I am immensely delighted to receive this award from Mr. Mahesh C, Assistant Professor (Special Grade) 
+                                cum Chief Technical Officer at FISAT. This remarkable achievement is one that I will always cherish deeply, 
+                                marking a moment of great joy and pride in my journey."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="services__card">
+                    <div class="serv">
+                        <img src="{% static 'Port/assets/img/Out.jpeg' %}" alt="">
+                        <h3 class="services__title">Outstanding Student Branch Chapter Award<br> IEEE SPS Kerala Section</h3>
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+                            <h3 class="services__modal-title">Outstanding Student Branch Chapter Recognition</h3>
+                            <p class="services__modal-description">
+                                "I, 𝐒𝐏𝐒 𝐂𝐡𝐚𝐢𝐫 𝐨𝐟 𝐈𝐄𝐄𝐄 𝐅𝐈𝐒𝐀𝐓 𝐒𝐁, along with my esteemed colleagues 𝐆𝐫𝐞𝐠𝐨𝐫𝐲 𝐊𝐮𝐫𝐢𝐚𝐧 , 
+                                Webmaster, and 𝐀𝐧𝐨𝐮𝐬𝐡𝐤𝐚 𝐊, WiSP and Vice Chair of IEEE FISAT SB, jointly received the
+                                "𝐎𝐮𝐭𝐬𝐭𝐚𝐧𝐝𝐢𝐧𝐠 𝐒𝐏𝐒 𝐒𝐭𝐮𝐝𝐞𝐧𝐭 𝐁𝐫𝐚𝐧𝐜𝐡 𝐂𝐡𝐚𝐩𝐭𝐞𝐫 𝐫𝐞𝐜𝐨𝐠𝐧𝐢𝐭𝐢𝐨𝐧" of year 2023 from IEEE SPS Kerala Chapter! 
+                                It's a remarkable achievement considering that IEEE SPS SBC FISAT was formed just last year in 2022. 
+                                Honored to receive this award from 𝐃𝐫. 𝐀 𝐔𝐧𝐧𝐢𝐤𝐫𝐢𝐬𝐡𝐧𝐚𝐧, Associate Director at NPOL (DRDO), along with recognition from 𝐑𝐞𝐬𝐡𝐧𝐚 𝐒, 
+                                Chair of IEEE SPS Kerala Chapter, 𝐃𝐫. 𝐌.𝐕. 𝐑𝐚𝐣𝐞𝐬𝐡 𝐌𝐚𝐥𝐢𝐲𝐞𝐜𝐤𝐚𝐥, Advisor, IEEE SPS Kerala Section, and Chairman, IEEE Kochi Subsection, 
+                                and 𝐒𝐞𝐞𝐦𝐚 𝐒𝐚𝐟𝐚𝐫, WiSP chairperson, IEEE SPS Kerala Chapter. Thank you to everyone who has been part of our journey and contributed to this achievement."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <sapn class="section__subtitle">Get in touch</sapn>
+            <h3 class="section__title">Contact Me</h3>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-info">Talk to me</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">helenanil33@gmail.com</span>
+
+                            <a href="mailto:helenanil33@gmail.com" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon'></i>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">9072030864</span>
+
+                            <a href="https://api.whatsapp.com/send?phone=+919072030864&text=Hey there!" target="_blank"
+                                class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-linkedin contact__card-icon'></i>
+                            <h3 class="contact__card-title">Linkedin</h3>
+                            <span class="contact__card-data">Helen Anil</span>
+
+                            <a href="https://www.linkedin.com/in/helenanil17/" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+
+                    <form action="" class="contact__form" method="post">
+                        {% csrf_token %}
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Name</label>
+                            <input type="text" placeholder="Enter name" class="contact__form-input" name="name">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <label for="" class="contact__form-tag">Mail</label>
+                            <input type="email" placeholder="Enter email" class="contact__form-input" name="mail">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <label for="" class="contact__form-tag">Message</label>
+                            <textarea name="message" id="" cols="30" rows="10" placeholder="Write your Message"
+                                class="contact__form-input "></textarea>
+                        </div>
+
+                        <button class="button" type="submit" >
+                            Send Message
+                        </button>
+                    </form>
+
+                </div>
+
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title"></h1>
+
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#education" class="footer__link">Education</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#project" class="footer__link">Projects</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#volunteering" class="footer__link">Volunteering</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#organisations" class="footer__link">Organisations</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#awards" class="footer__link">Awards</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+             <ul class="footer__social">
+                <!-- <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter footer__social-icon'></i>
+                    </a>
+                </li>
+                
+                <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram footer__social-icon'></i>
+                    </a>
+                </li> -->
+                <li class="footer__social-item">
+                    <a href="https://www.linkedin.com/in/helenanil17/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://github.com/HelenAnil17" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-github footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+
+            
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="{% static 'Port/assets/js/swiper-bundle.min.js' %}"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="{% static 'Port/assets/js/mixitup.min.js' %}"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="{% static 'Port/assets/js/main.js' %}"></script>
+</body>
+
+</html>
